@@ -1,0 +1,37 @@
+[
+  {
+    "Id": 1,
+    "Title": "Cs:go",
+    "Genre": "Shooter"
+  },
+  {
+    "Id": 2,
+    "Title": "The Last of Us Part I",
+    "Genre": "Adventure"
+  },
+  {
+    "Id": 3,
+    "Title": "GTA 6",
+    "Genre": "Open World Adventure"
+  },
+  {
+    "Id": 4,
+    "Title": "Dota 2",
+    "Genre": "Multiplayer online battle arena"
+  },
+  {
+    "Id": 5,
+    "Title": "Rainbow Six Sage",
+    "Genre": "Shooter"
+  },
+  {
+    "Id": 6,
+    "Title": "Pubg",
+    "Genre": "Shooter"
+  },
+  {
+    "Id": 7,
+    "Title": "Minecraft",
+    "Genre": "Survival"
+  }
+]

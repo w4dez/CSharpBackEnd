@@ -1,0 +1,6 @@
+[
+  { "id": 1, "title": "Cs:go", "genre": "Shooter" },
+  { "id": 2, "title": "The Last of Us Part I", "genre": "Adventure" },
+  { "id": 3, "title": "GTA 6", "genre": "Open World Adventure" },
+  { "id": 4, "title": "Dota 2", "genre": "Multiplayer online battle arena" }
+]
