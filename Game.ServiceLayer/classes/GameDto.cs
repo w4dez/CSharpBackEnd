@@ -1,4 +1,4 @@
-
+namespace Game.ServiceLayer;
 
 public class GameDto
 {

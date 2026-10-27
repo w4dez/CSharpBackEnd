@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jiggyg/Documents/backEnd/games4you.service/games4you.service.csproj",
-      "projectName": "games4you.service",
-      "projectPath": "/Users/jiggyg/Documents/backEnd/games4you.service/games4you.service.csproj",
+      "projectUniqueName": "/Users/jiggyg/Documents/backEnd/Game.ServiceLayer/Game.ServiceLayer.csproj",
+      "projectName": "Game.ServiceLayer",
+      "projectPath": "/Users/jiggyg/Documents/backEnd/Game.ServiceLayer/Game.ServiceLayer.csproj",
       "packagesPath": "/Users/jiggyg/.nuget/packages/",
-      "outputPath": "/Users/jiggyg/Documents/backEnd/games4you.service/obj/",
+      "outputPath": "/Users/jiggyg/Documents/backEnd/Game.ServiceLayer/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/jiggyg/.nuget/NuGet/NuGet.Config"

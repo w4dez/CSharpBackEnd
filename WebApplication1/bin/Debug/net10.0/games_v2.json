@@ -15,14 +15,9 @@
     "Genre": "Open World Adventure"
   },
   {
-    "Id": 4,
-    "Title": "Dota 2",
-    "Genre": "Multiplayer online battle arena"
-  },
-  {
     "Id": 5,
-    "Title": "Rainbow Six Sage",
-    "Genre": "Shooter"
+    "Title": "GTA7",
+    "Genre": "Open World Adventure"
   },
   {
     "Id": 6,
@@ -33,5 +28,15 @@
     "Id": 7,
     "Title": "Minecraft",
     "Genre": "Survival"
+  },
+  {
+    "Id": 8,
+    "Title": "GTA7",
+    "Genre": "Open World Adventure"
+  },
+  {
+    "Id": 9,
+    "Title": "GTA7",
+    "Genre": "Open World Adventure"
   }
 ]

@@ -4,14 +4,6 @@
         <name>WebApplication1</name>
     </assembly>
     <members>
-        <member name="M:WebApplication1.Controllers.GameController.GetGames">
-            <summary>
-            Retrieves all grades for the logged-in user.
-            </summary>
-            <returns>A list of all games in the system.</returns>
-            <response code="200">Successful retrieval of games.</response>
-            <response code="401">User is not authenticated.</response>
-        </member>
         <member name="M:Microsoft.AspNetCore.OpenApi.Generated.DocumentationCommentIdHelper.CreateDocumentationId(System.Type)">
             <summary>
             Generates a documentation comment ID for a type.

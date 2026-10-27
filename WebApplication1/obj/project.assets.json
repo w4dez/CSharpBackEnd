@@ -113,6 +113,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Game.ServiceLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Game.ServiceLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Game.ServiceLayer.dll": {}
+        }
       }
     }
   },
@@ -489,10 +499,16 @@
         "swashbuckle.aspnetcore.swaggerui.10.3.1.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Game.ServiceLayer/1.0.0": {
+      "type": "project",
+      "path": "../Game.ServiceLayer/Game.ServiceLayer.csproj",
+      "msbuildProject": "../Game.ServiceLayer/Game.ServiceLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "Game.ServiceLayer >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 10.0.14",
       "Swashbuckle.AspNetCore >= 10.3.1"
     ]
@@ -522,7 +538,11 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/jiggyg/Documents/backEnd/Game.ServiceLayer/Game.ServiceLayer.csproj": {
+              "projectPath": "/Users/jiggyg/Documents/backEnd/Game.ServiceLayer/Game.ServiceLayer.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v10.0": {
       "WebApplication1/1.0.0": {
         "dependencies": {
+          "Game.ServiceLayer": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "10.0.14",
           "Swashbuckle.AspNetCore": "10.3.1"
         },
@@ -70,6 +71,14 @@
             "fileVersion": "10.3.1.3201"
           }
         }
+      },
+      "Game.ServiceLayer/1.0.0": {
+        "runtime": {
+          "Game.ServiceLayer.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -120,6 +129,11 @@
       "sha512": "sha512-kXuMIVJBDD6qMwG78VUrKy4x5Ke98HU0Q023Sf2iSBO/x45c5BuByYPAExIs9UeVsjdGGgvLWU5jK8l6MO2Z0Q==",
       "path": "swashbuckle.aspnetcore.swaggerui/10.3.1",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.10.3.1.nupkg.sha512"
+    },
+    "Game.ServiceLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

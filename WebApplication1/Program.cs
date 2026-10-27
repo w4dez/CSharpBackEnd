@@ -1,5 +1,6 @@
 using Microsoft.OpenApi;
 using System.Reflection;
+namespace Game.ServiceLayer;
 
 public class Program
 {

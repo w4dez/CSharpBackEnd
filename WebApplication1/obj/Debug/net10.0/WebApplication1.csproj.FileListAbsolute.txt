@@ -38,3 +38,5 @@
 /Users/jiggyg/Documents/backEnd/WebApplication1/bin/Debug/net10.0/WebApplication1.xml
 /Users/jiggyg/Documents/backEnd/WebApplication1/obj/Debug/net10.0/WebApplication1.xml
 /Users/jiggyg/Documents/backEnd/WebApplication1/bin/Debug/net10.0/games.json
+/Users/jiggyg/Documents/backEnd/WebApplication1/bin/Debug/net10.0/Game.ServiceLayer.dll
+/Users/jiggyg/Documents/backEnd/WebApplication1/bin/Debug/net10.0/Game.ServiceLayer.pdb
