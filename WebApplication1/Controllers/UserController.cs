@@ -1,23 +1,25 @@
 using Microsoft.AspNetCore.Mvc;
 using Game.ServiceLayer;
+using GameDomain;
 namespace WebApplication1.Controllers;
 
 
 [ApiController]
 [Route("api/[controller]")]
 /// <summary>
-///       
+///   
 /// </summary>
-public class UserController : ControllerBase // Controller for handling user-related API requests
+public class UserController : ControllerBase // Controller for handling game-related API requests
 {
 
-  private UserService _userService;  // Dependency injection for the UserService
-  /// <summary>
-  ///   
-  /// </summary>
-  /// <param name="userService"></param>
+  private UserService _userService; // Dependency injection for the UserService
+/// <summary>
+///   
+/// </summary>
+/// <param name="userService"></param>
   public UserController(UserService userService) // Constructor injection for the UserService
   {
+    DataService dataService = new DataService();
     _userService = userService;
   }
 
@@ -26,23 +28,23 @@ public class UserController : ControllerBase // Controller for handling user-rel
   ///   
   /// </summary>
   /// <returns></returns>
-  public ActionResult<List<UserDto>> GetUser() // GET: api/user
+  public ActionResult<List<GameDomain.UserDto>> GetUsers() // GET: api/user
   {
     var users = _userService.GetAllUsers();
     return Ok(users);
   }
+
   [HttpGet("{id}")]
   /// <summary>
   ///   
   /// </summary>
   /// <param name="id"></param>
   /// <returns></returns>
-  public ActionResult<UserDto> GetById(int id) // GET: api/user/{id}
+  public ActionResult<GameDomain.UserDto> GetById(int id) // GET: api/user/{id}
   {
     var user = _userService.GetById(id);
 
     if (user == null) return NotFound();
-
     return Ok(user);
   }
   [HttpPost]
@@ -51,7 +53,7 @@ public class UserController : ControllerBase // Controller for handling user-rel
   /// </summary>
   /// <param name="createUserDto"></param>
   /// <returns></returns>
-  public ActionResult<UserDto> CreateUser([FromBody] CreateUserDto createUserDto) // POST: api/user
+  public ActionResult<GameDomain.UserDto> CreateUser([FromBody] GameDomain.CreateUserDto createUserDto) // POST: api/user
   {
     var newUser = _userService.CreateUser(createUserDto);
     return Created($"/api/user/{newUser.Id}", newUser);
@@ -64,7 +66,7 @@ public class UserController : ControllerBase // Controller for handling user-rel
   /// <param name="id"></param>
   /// <param name="updateUserDto"></param>
   /// <returns></returns>
-  public ActionResult UpdateUser(int id, [FromBody] UpdateUserDto updateUserDto) // PUT: api/user/{id}
+  public ActionResult<GameDomain.UserDto> UpdateUser(int id, [FromBody] GameDomain.UpdateUserDto updateUserDto) // PUT: api/user/{id}
   {
     var success = _userService.UpdateUser(id, updateUserDto);
 
@@ -87,8 +89,16 @@ public class UserController : ControllerBase // Controller for handling user-rel
 
     return NoContent();
   }
+[HttpGet ("In Work")]
+[ProducesResponseType(StatusCodes.Status200OK)]
+[ProducesResponseType(StatusCodes.Status401Unauthorized)]
+public ActionResult<List<UserDto>> GetUser()
+  {
+    return GetUser();
+  }
 }
 
+  
 
 /* [HttpGet("GetList")]
 public ActionResult<List<GameDto>> GetGames()

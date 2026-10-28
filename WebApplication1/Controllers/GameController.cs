@@ -23,7 +23,7 @@ public class GameController : ControllerBase // Controller for handling game-rel
     _gameService = gameService;
   }
 
-  [HttpGet]
+  [HttpGet ]
   /// <summary>
   ///   
   /// </summary>
@@ -89,7 +89,24 @@ public class GameController : ControllerBase // Controller for handling game-rel
 
     return NoContent();
   }
+  [HttpGet ("Working")]
+[ProducesResponseType(StatusCodes.Status200OK)]
+[ProducesResponseType(StatusCodes.Status401Unauthorized)]
+ public ActionResult<List<GameDto>> GetGame()
+  {
+    return GetGame();
+  }
+
 }
+
+
+
+/// <summary>
+/// Retrieves all grades for the logged-in user.
+/// </summary>
+/// <returns>A list of all games in the system.</returns>
+/// <response code="200">Successful retrieval of games.</response>
+/// <response code="401">User is not authenticated.</response>
 
 
 /* [HttpGet("GetList")]

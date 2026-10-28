@@ -9,11 +9,10 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddServiceLayer(this IServiceCollection services, IConfiguration configuration)
     {
-        // 1. Call the DataAccess method (which lives in the DataAccess project)
         services.AddDataAccessLayer(configuration); 
 
-        // 2. Register the Services
         services.AddScoped<GameService>();
+        services.AddScoped<UserService>();
 
         return services;
     }
