@@ -10,3 +10,9 @@
 /Users/jiggyg/Documents/backEnd/Game.ServiceLayer/obj/Debug/net10.0/refint/Game.ServiceLayer.dll
 /Users/jiggyg/Documents/backEnd/Game.ServiceLayer/obj/Debug/net10.0/Game.ServiceLayer.pdb
 /Users/jiggyg/Documents/backEnd/Game.ServiceLayer/obj/Debug/net10.0/ref/Game.ServiceLayer.dll
+/Users/jiggyg/Documents/backEnd/Game.ServiceLayer/bin/Debug/net10.0/GameDomain.dll
+/Users/jiggyg/Documents/backEnd/Game.ServiceLayer/bin/Debug/net10.0/GameDomain.pdb
+/Users/jiggyg/Documents/backEnd/Game.ServiceLayer/obj/Debug/net10.0/Game.ServiceLayer.csproj.AssemblyReference.cache
+/Users/jiggyg/Documents/backEnd/Game.ServiceLayer/obj/Debug/net10.0/Game.Ser.5C15CF87.Up2Date
+/Users/jiggyg/Documents/backEnd/Game.ServiceLayer/bin/Debug/net10.0/Game.DataAccessLayer.dll
+/Users/jiggyg/Documents/backEnd/Game.ServiceLayer/bin/Debug/net10.0/Game.DataAccessLayer.pdb

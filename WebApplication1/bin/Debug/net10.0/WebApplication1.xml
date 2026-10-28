@@ -4,6 +4,18 @@
         <name>WebApplication1</name>
     </assembly>
     <members>
+        <member name="M:WebApplication1.Controllers.GameController.#ctor(Game.ServiceLayer.GameService)">
+            <summary>
+              
+            </summary>
+            <param name="gameService"></param>
+        </member>
+        <member name="M:WebApplication1.Controllers.UserController.#ctor(Game.ServiceLayer.UserService)">
+            <summary>
+              
+            </summary>
+            <param name="userService"></param>
+        </member>
         <member name="M:Microsoft.AspNetCore.OpenApi.Generated.DocumentationCommentIdHelper.CreateDocumentationId(System.Type)">
             <summary>
             Generates a documentation comment ID for a type.

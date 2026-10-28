@@ -1,16 +1,35 @@
 {
   "version": 2,
-  "dgSpecHash": "lw4A/m6N1N0=",
+  "dgSpecHash": "e4X1wZaTS2c=",
   "success": true,
   "projectFilePath": "/Users/jiggyg/Documents/backEnd/WebApplication1/WebApplication1.csproj",
   "expectedPackageFiles": [
     "/Users/jiggyg/.nuget/packages/microsoft.aspnetcore.openapi/10.0.14/microsoft.aspnetcore.openapi.10.0.14.nupkg.sha512",
+    "/Users/jiggyg/.nuget/packages/microsoft.entityframeworkcore/9.0.0/microsoft.entityframeworkcore.9.0.0.nupkg.sha512",
+    "/Users/jiggyg/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.0/microsoft.entityframeworkcore.abstractions.9.0.0.nupkg.sha512",
+    "/Users/jiggyg/.nuget/packages/microsoft.entityframeworkcore.analyzers/9.0.0/microsoft.entityframeworkcore.analyzers.9.0.0.nupkg.sha512",
+    "/Users/jiggyg/.nuget/packages/microsoft.entityframeworkcore.relational/9.0.0/microsoft.entityframeworkcore.relational.9.0.0.nupkg.sha512",
     "/Users/jiggyg/.nuget/packages/microsoft.extensions.apidescription.server/10.0.0/microsoft.extensions.apidescription.server.10.0.0.nupkg.sha512",
     "/Users/jiggyg/.nuget/packages/microsoft.openapi/2.12.2/microsoft.openapi.2.12.2.nupkg.sha512",
+    "/Users/jiggyg/.nuget/packages/mysqlconnector/2.4.0/mysqlconnector.2.4.0.nupkg.sha512",
+    "/Users/jiggyg/.nuget/packages/pomelo.entityframeworkcore.mysql/9.0.0/pomelo.entityframeworkcore.mysql.9.0.0.nupkg.sha512",
     "/Users/jiggyg/.nuget/packages/swashbuckle.aspnetcore/10.3.1/swashbuckle.aspnetcore.10.3.1.nupkg.sha512",
     "/Users/jiggyg/.nuget/packages/swashbuckle.aspnetcore.swagger/10.3.1/swashbuckle.aspnetcore.swagger.10.3.1.nupkg.sha512",
     "/Users/jiggyg/.nuget/packages/swashbuckle.aspnetcore.swaggergen/10.3.1/swashbuckle.aspnetcore.swaggergen.10.3.1.nupkg.sha512",
     "/Users/jiggyg/.nuget/packages/swashbuckle.aspnetcore.swaggerui/10.3.1/swashbuckle.aspnetcore.swaggerui.10.3.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "message": "Game.DataAccessLayer depends on Pomelo.EntityFrameworkCore.MySql (>= 9.0.0-rc.3.26522.148) but Pomelo.EntityFrameworkCore.MySql 9.0.0-rc.3.26522.148 was not found. Pomelo.EntityFrameworkCore.MySql 9.0.0 was resolved instead.",
+      "projectPath": "/Users/jiggyg/Documents/backEnd/WebApplication1/WebApplication1.csproj",
+      "warningLevel": 1,
+      "filePath": "/Users/jiggyg/Documents/backEnd/WebApplication1/WebApplication1.csproj",
+      "libraryId": "Pomelo.EntityFrameworkCore.MySql",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

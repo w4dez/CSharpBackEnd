@@ -1,0 +1,16 @@
+/Users/jiggyg/Documents/backEnd/Game.DataAccessLayer/obj/Debug/net10.0/Game.DataAccessLayer.csproj.AssemblyReference.cache
+/Users/jiggyg/Documents/backEnd/Game.DataAccessLayer/obj/Debug/net10.0/Game.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jiggyg/Documents/backEnd/Game.DataAccessLayer/obj/Debug/net10.0/Game.DataAccessLayer.AssemblyInfoInputs.cache
+/Users/jiggyg/Documents/backEnd/Game.DataAccessLayer/obj/Debug/net10.0/Game.DataAccessLayer.AssemblyInfo.cs
+/Users/jiggyg/Documents/backEnd/Game.DataAccessLayer/obj/Debug/net10.0/Game.DataAccessLayer.csproj.CoreCompileInputs.cache
+/Users/jiggyg/Documents/backEnd/Game.DataAccessLayer/obj/Debug/net10.0/Game.DataAccessLayer.sourcelink.json
+/Users/jiggyg/Documents/backEnd/Game.DataAccessLayer/bin/Debug/net10.0/Game.DataAccessLayer.deps.json
+/Users/jiggyg/Documents/backEnd/Game.DataAccessLayer/bin/Debug/net10.0/Game.DataAccessLayer.dll
+/Users/jiggyg/Documents/backEnd/Game.DataAccessLayer/bin/Debug/net10.0/Game.DataAccessLayer.pdb
+/Users/jiggyg/Documents/backEnd/Game.DataAccessLayer/bin/Debug/net10.0/GameDomain.dll
+/Users/jiggyg/Documents/backEnd/Game.DataAccessLayer/bin/Debug/net10.0/GameDomain.pdb
+/Users/jiggyg/Documents/backEnd/Game.DataAccessLayer/obj/Debug/net10.0/Game.Dat.DCAC0E1E.Up2Date
+/Users/jiggyg/Documents/backEnd/Game.DataAccessLayer/obj/Debug/net10.0/Game.DataAccessLayer.dll
+/Users/jiggyg/Documents/backEnd/Game.DataAccessLayer/obj/Debug/net10.0/refint/Game.DataAccessLayer.dll
+/Users/jiggyg/Documents/backEnd/Game.DataAccessLayer/obj/Debug/net10.0/Game.DataAccessLayer.pdb
+/Users/jiggyg/Documents/backEnd/Game.DataAccessLayer/obj/Debug/net10.0/ref/Game.DataAccessLayer.dll

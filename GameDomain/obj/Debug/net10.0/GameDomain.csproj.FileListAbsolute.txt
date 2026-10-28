@@ -1,0 +1,12 @@
+/Users/jiggyg/Documents/backEnd/GameDomain/obj/Debug/net10.0/GameDomain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jiggyg/Documents/backEnd/GameDomain/obj/Debug/net10.0/GameDomain.AssemblyInfoInputs.cache
+/Users/jiggyg/Documents/backEnd/GameDomain/obj/Debug/net10.0/GameDomain.AssemblyInfo.cs
+/Users/jiggyg/Documents/backEnd/GameDomain/obj/Debug/net10.0/GameDomain.csproj.CoreCompileInputs.cache
+/Users/jiggyg/Documents/backEnd/GameDomain/obj/Debug/net10.0/GameDomain.sourcelink.json
+/Users/jiggyg/Documents/backEnd/GameDomain/bin/Debug/net10.0/GameDomain.deps.json
+/Users/jiggyg/Documents/backEnd/GameDomain/bin/Debug/net10.0/GameDomain.dll
+/Users/jiggyg/Documents/backEnd/GameDomain/bin/Debug/net10.0/GameDomain.pdb
+/Users/jiggyg/Documents/backEnd/GameDomain/obj/Debug/net10.0/GameDomain.dll
+/Users/jiggyg/Documents/backEnd/GameDomain/obj/Debug/net10.0/refint/GameDomain.dll
+/Users/jiggyg/Documents/backEnd/GameDomain/obj/Debug/net10.0/GameDomain.pdb
+/Users/jiggyg/Documents/backEnd/GameDomain/obj/Debug/net10.0/ref/GameDomain.dll

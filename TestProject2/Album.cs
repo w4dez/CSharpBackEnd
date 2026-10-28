@@ -2,7 +2,7 @@ namespace TestProject2;
 
 public class Album
 {
-  public DateOnly DateOfRealese { get; set; }
+  public DateOnly DateOfRealese { get; set; } 
 
   public int SoldCopies { get; set; }
 

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Game.ServiceLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6159832f60680d130a51557481db6b9e9844736")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+90ab94078ceb0ab4f0fc81a21c7c03fe44b1a8b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Game.ServiceLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Game.ServiceLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,8 +1,73 @@
 {
   "version": 2,
-  "dgSpecHash": "gD//I76W4Es=",
+  "dgSpecHash": "0N6Lh8C4HNk=",
   "success": true,
   "projectFilePath": "/Users/jiggyg/Documents/backEnd/Game.ServiceLayer/Game.ServiceLayer.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "/Users/jiggyg/.nuget/packages/microsoft.entityframeworkcore/9.0.0/microsoft.entityframeworkcore.9.0.0.nupkg.sha512",
+    "/Users/jiggyg/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.0/microsoft.entityframeworkcore.abstractions.9.0.0.nupkg.sha512",
+    "/Users/jiggyg/.nuget/packages/microsoft.entityframeworkcore.analyzers/9.0.0/microsoft.entityframeworkcore.analyzers.9.0.0.nupkg.sha512",
+    "/Users/jiggyg/.nuget/packages/microsoft.entityframeworkcore.relational/9.0.0/microsoft.entityframeworkcore.relational.9.0.0.nupkg.sha512",
+    "/Users/jiggyg/.nuget/packages/microsoft.extensions.caching.abstractions/9.0.0/microsoft.extensions.caching.abstractions.9.0.0.nupkg.sha512",
+    "/Users/jiggyg/.nuget/packages/microsoft.extensions.caching.memory/9.0.0/microsoft.extensions.caching.memory.9.0.0.nupkg.sha512",
+    "/Users/jiggyg/.nuget/packages/microsoft.extensions.configuration.abstractions/10.0.0/microsoft.extensions.configuration.abstractions.10.0.0.nupkg.sha512",
+    "/Users/jiggyg/.nuget/packages/microsoft.extensions.dependencyinjection/9.0.0/microsoft.extensions.dependencyinjection.9.0.0.nupkg.sha512",
+    "/Users/jiggyg/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.0/microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",
+    "/Users/jiggyg/.nuget/packages/microsoft.extensions.logging/9.0.0/microsoft.extensions.logging.9.0.0.nupkg.sha512",
+    "/Users/jiggyg/.nuget/packages/microsoft.extensions.logging.abstractions/9.0.0/microsoft.extensions.logging.abstractions.9.0.0.nupkg.sha512",
+    "/Users/jiggyg/.nuget/packages/microsoft.extensions.options/9.0.0/microsoft.extensions.options.9.0.0.nupkg.sha512",
+    "/Users/jiggyg/.nuget/packages/microsoft.extensions.primitives/10.0.0/microsoft.extensions.primitives.10.0.0.nupkg.sha512",
+    "/Users/jiggyg/.nuget/packages/mysqlconnector/2.4.0/mysqlconnector.2.4.0.nupkg.sha512",
+    "/Users/jiggyg/.nuget/packages/pomelo.entityframeworkcore.mysql/9.0.0/pomelo.entityframeworkcore.mysql.9.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "message": "Game.ServiceLayer depends on Microsoft.EntityFrameworkCore (>= 9.0.0-rc.3.26522.148) but Microsoft.EntityFrameworkCore 9.0.0-rc.3.26522.148 was not found. Microsoft.EntityFrameworkCore 9.0.0 was resolved instead.",
+      "projectPath": "/Users/jiggyg/Documents/backEnd/Game.ServiceLayer/Game.ServiceLayer.csproj",
+      "warningLevel": 1,
+      "filePath": "/Users/jiggyg/Documents/backEnd/Game.ServiceLayer/Game.ServiceLayer.csproj",
+      "libraryId": "Microsoft.EntityFrameworkCore",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "message": "Game.ServiceLayer depends on Microsoft.Extensions.Configuration.Abstractions (>= 10.0.0-rc.3.26522.148) but Microsoft.Extensions.Configuration.Abstractions 10.0.0-rc.3.26522.148 was not found. Microsoft.Extensions.Configuration.Abstractions 10.0.0 was resolved instead.",
+      "projectPath": "/Users/jiggyg/Documents/backEnd/Game.ServiceLayer/Game.ServiceLayer.csproj",
+      "warningLevel": 1,
+      "filePath": "/Users/jiggyg/Documents/backEnd/Game.ServiceLayer/Game.ServiceLayer.csproj",
+      "libraryId": "Microsoft.Extensions.Configuration.Abstractions",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "message": "Game.ServiceLayer depends on Microsoft.Extensions.DependencyInjection.Abstractions (>= 9.0.0-rc.3.26522.148) but Microsoft.Extensions.DependencyInjection.Abstractions 9.0.0-rc.3.26522.148 was not found. Microsoft.Extensions.DependencyInjection.Abstractions 9.0.0 was resolved instead.",
+      "projectPath": "/Users/jiggyg/Documents/backEnd/Game.ServiceLayer/Game.ServiceLayer.csproj",
+      "warningLevel": 1,
+      "filePath": "/Users/jiggyg/Documents/backEnd/Game.ServiceLayer/Game.ServiceLayer.csproj",
+      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "message": "Game.ServiceLayer depends on Pomelo.EntityFrameworkCore.MySql (>= 9.0.0-rc.3.26522.148) but Pomelo.EntityFrameworkCore.MySql 9.0.0-rc.3.26522.148 was not found. Pomelo.EntityFrameworkCore.MySql 9.0.0 was resolved instead.",
+      "projectPath": "/Users/jiggyg/Documents/backEnd/Game.ServiceLayer/Game.ServiceLayer.csproj",
+      "warningLevel": 1,
+      "filePath": "/Users/jiggyg/Documents/backEnd/Game.ServiceLayer/Game.ServiceLayer.csproj",
+      "libraryId": "Pomelo.EntityFrameworkCore.MySql",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

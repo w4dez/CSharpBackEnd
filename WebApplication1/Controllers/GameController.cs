@@ -1,28 +1,45 @@
 using Microsoft.AspNetCore.Mvc;
 using Game.ServiceLayer;
+using GameDomain;
 namespace WebApplication1.Controllers;
 
 
 [ApiController]
 [Route("api/[controller]")]
-public class GameController : ControllerBase
+/// <summary>
+///   
+/// </summary>
+public class GameController : ControllerBase // Controller for handling game-related API requests
 {
 
-  private readonly GameService _gameService;
-
-  public GameController()
+  private GameService _gameService; // Dependency injection for the GameService
+/// <summary>
+///   
+/// </summary>
+/// <param name="gameService"></param>
+  public GameController(GameService gameService) // Constructor injection for the GameService
   {
-    _gameService = new GameService();
+    DataService dataService = new DataService();
+    _gameService = gameService;
   }
 
   [HttpGet]
-  public ActionResult<List<GameDto>> GetGames()
+  /// <summary>
+  ///   
+  /// </summary>
+  /// <returns></returns>
+  public ActionResult<List<GameDto>> GetGames() // GET: api/game
   {
     var games = _gameService.GetAllGames();
     return Ok(games);
   }
   [HttpGet("{id}")]
-  public ActionResult<GameDto> GetById(int id)
+  /// <summary>
+  ///   
+  /// </summary>
+  /// <param name="id"></param>
+  /// <returns></returns>
+  public ActionResult<GameDto> GetById(int id) // GET: api/game/{id}
   {
     var game = _gameService.GetById(id);
 
@@ -31,14 +48,25 @@ public class GameController : ControllerBase
     return Ok(game);
   }
   [HttpPost]
-  public ActionResult<GameDto> CreateGame([FromBody] CreateGameDto createGameDto)
+  /// <summary>
+  ///   
+  /// </summary>
+  /// <param name="createGameDto"></param>
+  /// <returns></returns>
+  public ActionResult<GameDto> CreateGame([FromBody] CreateGameDto createGameDto) // POST: api/game
   {
     var newGame = _gameService.CreateGame(createGameDto);
     return Created($"/api/game/{newGame.Id}", newGame);
   }
 
   [HttpPut("{id}")]
-  public ActionResult UpdateGame(int id, [FromBody] CreateGameDto updateGameDto)
+  /// <summary>
+  ///   
+  /// </summary>
+  /// <param name="id"></param>
+  /// <param name="updateGameDto"></param>
+  /// <returns></returns>
+  public ActionResult UpdateGame(int id, [FromBody] UpdateGameDto updateGameDto) // PUT: api/game/{id}
   {
     var success = _gameService.UpdateGame(id, updateGameDto);
 
@@ -48,7 +76,12 @@ public class GameController : ControllerBase
   }
 
   [HttpDelete("{id}")]
-  public IActionResult DeleteGame(int id)
+  /// <summary>
+  ///   
+  /// </summary>
+  /// <param name="id"></param>
+  /// <returns></returns>
+  public IActionResult DeleteGame(int id) // DELETE: api/game/{id}
   {
     var success = _gameService.DeleteGame(id);
 

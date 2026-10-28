@@ -1,5 +1,6 @@
 using Microsoft.OpenApi;
 using System.Reflection;
+using Game.DataAccessLayer;
 namespace Game.ServiceLayer;
 
 public class Program
@@ -13,6 +14,9 @@ public class Program
         builder.Services.AddControllers();
         // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
         builder.Services.AddOpenApi();
+        builder.Services.AddScoped<GameService, GameService>();
+        builder.Services.AddScoped<UserService, UserService>();
+        builder.Services.AddServiceLayer(builder.Configuration); 
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen(options =>
         {
@@ -49,7 +53,6 @@ public class Program
      }
  });
         });
-
 
         var app = builder.Build();
         if (app.Environment.IsDevelopment())
