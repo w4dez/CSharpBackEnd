@@ -9,16 +9,6 @@ namespace games4you.Controllers;
 
 public class GenreController : ControllerBase
 {
-  private readonly string _filePath = Path.Combine(AppContext.BaseDirectory, "../genres.json");
-
-  private List <Genre> LoadGenres()
-  {
-    if (!System.IO.File.Exists(_filePath))
-    {
-      var defaultGenres = new List<Genre>
-      {
-        new Genre {id = 1}
-      }
-    }
-  }
+  
 }
+  
