@@ -410,10 +410,6 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[9.0.0-rc.3.26522.148, )"
-            },
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",
               "version": "[10.0.0-rc.3.26522.148, )"
@@ -422,9 +418,9 @@
               "target": "Package",
               "version": "[9.0.0-rc.3.26522.148, )"
             },
-            "Pomelo.EntityFrameworkCore.MySql": {
+            "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
-              "version": "[9.0.0-rc.3.26522.148, )"
+              "version": "[8.14.0, )"
             }
           },
           "imports": [

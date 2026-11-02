@@ -1,11 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 using Game.ServiceLayer;
 using GameDomain;
+using Microsoft.AspNetCore.Authorization;
 namespace WebApplication1.Controllers;
-
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize] 
 /// <summary>
 ///   
 /// </summary>
@@ -23,7 +24,8 @@ public class GameController : ControllerBase // Controller for handling game-rel
     _gameService = gameService;
   }
 
-  [HttpGet ]
+  [HttpGet ] 
+  
   /// <summary>
   ///   
   /// </summary>

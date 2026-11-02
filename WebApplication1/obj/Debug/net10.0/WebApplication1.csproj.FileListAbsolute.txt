@@ -49,3 +49,12 @@
 /Users/jiggyg/Documents/backEnd/WebApplication1/bin/Debug/net10.0/GameDomain.dll
 /Users/jiggyg/Documents/backEnd/WebApplication1/bin/Debug/net10.0/Game.DataAccessLayer.pdb
 /Users/jiggyg/Documents/backEnd/WebApplication1/bin/Debug/net10.0/GameDomain.pdb
+/Users/jiggyg/Documents/backEnd/WebApplication1/bin/Debug/net10.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/jiggyg/Documents/backEnd/WebApplication1/bin/Debug/net10.0/Microsoft.Bcl.Cryptography.dll
+/Users/jiggyg/Documents/backEnd/WebApplication1/bin/Debug/net10.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/jiggyg/Documents/backEnd/WebApplication1/bin/Debug/net10.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/jiggyg/Documents/backEnd/WebApplication1/bin/Debug/net10.0/Microsoft.IdentityModel.Logging.dll
+/Users/jiggyg/Documents/backEnd/WebApplication1/bin/Debug/net10.0/Microsoft.IdentityModel.Protocols.dll
+/Users/jiggyg/Documents/backEnd/WebApplication1/bin/Debug/net10.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/jiggyg/Documents/backEnd/WebApplication1/bin/Debug/net10.0/Microsoft.IdentityModel.Tokens.dll
+/Users/jiggyg/Documents/backEnd/WebApplication1/bin/Debug/net10.0/System.IdentityModel.Tokens.Jwt.dll

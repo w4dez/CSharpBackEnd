@@ -1,6 +1,8 @@
 using Microsoft.OpenApi;
 using System.Reflection;
-using Game.DataAccessLayer;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 namespace Game.ServiceLayer;
 
 public class Program
@@ -18,41 +20,83 @@ public class Program
         builder.Services.AddScoped<UserService, UserService>();
         builder.Services.AddServiceLayer(builder.Configuration); 
         builder.Services.AddEndpointsApiExplorer();
-        builder.Services.AddSwaggerGen(options =>
+        builder.Services.AddAuthorization();
+        builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme =
+        JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme =
+        JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.Events = new JwtBearerEvents
+    {
+        OnAuthenticationFailed = context =>
         {
-            options.SwaggerDoc("v1", new OpenApiInfo
+            if (context.Exception.GetType() == typeof(SecurityTokenExpiredException))
             {
-                Title = "GradeManagement API",
-                Version = "v1"
-            });
-
-            // Include XML documentation file
-            var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-            var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-            if (File.Exists(xmlPath))
-            {
-                options.IncludeXmlComments(xmlPath);
+                context.Response.Headers.Add("Token-Expired", "true");
             }
-            // 1. Define Bearer token scheme
-            options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+            return Task.CompletedTask;
+        }
+    };
+    // Here we configure HOW a token should be validated
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+
+        // The values are read from the appsettings.json
+        ValidIssuer = builder.Configuration["Jwt:Issuer"],
+        ValidAudience = builder.Configuration["Jwt:Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(
+            Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]
+                ?? throw new InvalidOperationException("JWT Key is not configured.")))
+    };
+});
+    builder.Services.AddSwaggerGen(options =>
+{
+
+
+    // 1. Definition für den Bearer-Token festlegen
+    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.Http,
+        Scheme = "Bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "Gib deinen JWT-Token direkt ein (ohne das Wort 'Bearer' davor)."
+    });
+
+    // 2. Sicherheitsanforderung auf alle Endpunkte anwenden
+    options.AddSecurityRequirement(document => new OpenApiSecurityRequirement
             {
-                Name = "Authorization",
-                Type = SecuritySchemeType.Http,
-                Scheme = "Bearer",
-                BearerFormat = "JWT",
-                In = ParameterLocation.Header,
-                Description = "Enter your JWT token directly (without the word 'Bearer' in front)."
+                {
+                    new OpenApiSecuritySchemeReference("Bearer", document),
+                    new List<string>()
+                }
             });
 
-            // 2. Apply security requirement to all endpoints
-            options.AddSecurityRequirement(document => new OpenApiSecurityRequirement
- {
-     {
-         new OpenApiSecuritySchemeReference("Bearer", document),
-         new List<string>()
-     }
- });
-        });
+    options.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "GradeManagement API",
+        Version = "v1"
+    });
+
+    // XML-Dokumentationsdatei einbinden
+    string xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    string xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    if (File.Exists(xmlPath))
+    {
+        options.IncludeXmlComments(xmlPath);
+    }
+});
+            
+
 
         var app = builder.Build();
         if (app.Environment.IsDevelopment())
@@ -73,7 +117,15 @@ public class Program
         app.UseHttpsRedirection();
 
         app.UseAuthorization();
+ // 1. "Who are you?"
+// The app checks whether a valid token header exists
+// and creates the user's identity from it (HttpContext.User).
+app.UseAuthentication();
 
+// 2. "Are you allowed to do that?"
+// The app checks whether the identified user
+// has permission for the requested endpoint.
+app.UseAuthorization();
 
         app.MapControllers();
 

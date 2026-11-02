@@ -68,6 +68,18 @@
       "targetGraphs": [
         "net10.0"
       ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'MySqlConnector' 2.4.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-473q-m89c-ghf8",
+      "projectPath": "/Users/jiggyg/Documents/backEnd/Game.DataAccessLayer/Game.DataAccessLayer.csproj",
+      "warningLevel": 1,
+      "filePath": "/Users/jiggyg/Documents/backEnd/Game.DataAccessLayer/Game.DataAccessLayer.csproj",
+      "libraryId": "MySqlConnector",
+      "targetGraphs": [
+        "net10.0"
+      ]
     }
   ]
 }

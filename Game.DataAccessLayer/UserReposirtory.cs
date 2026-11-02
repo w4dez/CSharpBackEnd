@@ -34,6 +34,10 @@ public List<UserDto> GetAllUsers()
         _userContext.SaveChanges();
         return _userContext.Users.ToList();
     }
+    public UserDto? GetByEmail(string email)
+    {
+        return _userContext.Users.FirstOrDefault(u => u.Email == email);
+    }
     public bool UpdateUser(int id, UserDto user)
     {
         var userToUpdate = _userContext.Users.FirstOrDefault(u => u.Id == id);
